@@ -1,0 +1,19 @@
+h1 {text-align: center;}
+
+.side-by-side {
+    display: inline-block;
+    width: 45%;
+}
+
+.last {
+    width: 100%;
+    margin-top: 60%;
+
+}
+h3 {
+    font-weight: 500;
+}
+ul, ol {
+    font-weight: 300;
+}
+
