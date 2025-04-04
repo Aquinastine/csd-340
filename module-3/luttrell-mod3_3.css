@@ -1,13 +1,32 @@
 h1 {text-align: center;}
 
-.side-by-side {
-    display: inline-block;
-    width: 45%;
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
+.side-by-side {
+    width: 45%;
+    border-width: 1px;
+    border-color: red;
+    border-radius: 15px;
+}
+
+.left {
+    border-style: solid;
+}
+.right {
+    border-style: dashed;
+}
+
+
 
 .last {
     width: 100%;
     margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
 
 }
 h3 {
@@ -15,5 +34,12 @@ h3 {
 }
 ul, ol {
     font-weight: 300;
+    padding: 10px;
+    list-style-position: inside;
 }
-
+ul {
+    list-style-type: upper-roman;
+}
+a:hover {
+    text-decoration: underline;
+}
