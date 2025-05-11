@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Jason Luttrell, Mod 9.3-->
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <meta name="description"
+        content="Assignment for CSD340-T301 Module 2 Assignment 2"/>
+    <meta name="robots"
+        content="nofollow"/>
+    <meta http-equiv="author"
+        content="Jason Luttrell"/>
+    <meta name="keywords"
+        content="assignment, bellevue, module, html"/>
+    
+    <link href="luttrell-mod9_3.css" type="text/css"
+        rel="stylesheet"/>
+    <!--Script assigning variablest for spans-->
+    <script>
+        var _1stVar = "Luttrell";
+        var _2ndVar = "noble";
+        var _3rdVar = "nobles";
+        var _4thVar = "brothers";
+    </script>
+
+    <!--Script to make button stay active-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.button').forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.add('active');
+                });
+            });
+        });
+    </script>
+    
+   
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>All About The Luttrells</h2>
+
+        <p class="intro">
+            My name is Jason <span id="lastname">____</span>. My last name has 
+            <span id="noble">____</span> origins that traces its lineage from 
+            the Norman kingdoms of norther France, 
+            through the battle of Hastings in the eleventh-century. As part of 
+            the conquering Norman invasion my ancestors became British nobility 
+            and maintained their noble status for hundreds of years. Two 
+            brothers in the beginning of the eighteenth-century fled England 
+            to escape scandal and &rsquo; prison to the shores of America. 
+            <span class="sentence">These two brothers are the progenitors of all 
+            the Luttrells in the United States. </span>
+        </p>
+
+        <p>When the two fallen <span id="nobles">____</span> arrived in the 
+            United States, they 
+            traveled to present day North Carolina and bought a truly massive 
+            swath of land that included most of western North Carolina, part 
+            of Tennessee and part of Kentucky. They were incredibly wealthy 
+            again with such a massive swath of land, until the revolutionary 
+            war. When the colonial army won independence, the confederated 
+            states confiscated the land of many land owners to redistribute it 
+            to the soldiers who fought in the war.
+        </p>
+
+        <p>While the two  <span id="brothers">____</span> still retained a 
+            very large estate, 
+            measurable in square miles, they had lost most of what they had. 
+            But they still did quite well, and their ancestors still occupy 
+            North Carolina and Tennessee today. There was also a rather large 
+            group of Luttrells that traveled to Southern Illinois in search of 
+            land. That group is where I am descended from.
+        </p>
+            
+        <p>The Luttrells of my line (the Illinois Luttrells) are marked by a 
+            profound devotion to Christ, an extremely strong work ethic, and a 
+            connection to nature. Of course there are some exceptions, but not 
+            many. In fact, one of my Aunts was a miracle worker. She was known 
+            to be able to stop the bleeding of any wound, simply by praying. 
+            The effect of her prayers was immediate, and even the town doctor 
+            would send word to Aunt Blackie when someone was injured to stop 
+            the bleeding. It worked on livestock and people.
+        </p>
+        <!--Paragraph with four buttons to replce the ____ content above-->
+        <p>
+            <button type="button" class="button"
+            onclick="document.getElementById('lastname').innerHTML=_1stVar">
+            Luttrell
+            </button>
+
+            <button type="button" class="button"
+            onclick="document.getElementById('noble').innerHTML=_2ndVar">
+            noble
+            </button> 
+
+            <button type="button" class="button"
+            onclick="document.getElementById('nobles').innerHTML=_3rdVar">
+            nobles
+            </button>   
+
+            <button type="button" class="button"
+            onclick="document.getElementById('brothers').innerHTML=_4thVar">
+            brothers
+            </button>
+        </p>
+    </div>
+</body>
+<footer>
+    <hr/>
+    <address>
+        <a href="https://www.bellevue.edu/">Bellevue University</a><br>
+        1000 Galvin Road South<br>
+        Bellevue, Nebraska 68005
+    </address>
+</footer>
+
+</html>
