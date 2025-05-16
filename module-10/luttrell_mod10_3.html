@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--Jason Luttrell, Mod 9.3-->
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <meta name="description"
+        content="Assignment for CSD340-T301 Module 2 Assignment 2"/>
+    <meta name="robots"
+        content="nofollow"/>
+    <meta http-equiv="author"
+        content="Jason Luttrell"/>
+    <meta name="keywords"
+        content="assignment, bellevue, module, html"/>
+    
+    <link href="luttrell-mod9_3.css" type="text/css"
+        rel="stylesheet"/>
+    <!--function to switch images-->
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+        
+      }
+    </script>   
+   
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <br />
+        <div>
+        <a href=#
+            onmouseover="falcon.src='Images/Falcon1.jpg';"
+            onmouseout= "falcon.src='Images/Falcon2.jpg';"
+        >
+            <img border= 0 name = "falcon" src = "Images/Falcon1.jpg">
+        </a>
+        </div>
+        <br />
+        <div
+            onmouseover="this.style.color='red';"
+            onmouseout= "this.style.color='black';">
+
+        Run your mouse over the image to change.
+        <br />
+
+        </div>
+        <div>
+        <a href=#
+            onmouseover="monkeys.src='Images/monkeys1.jpg';"
+            onmouseout= "monkeys.src='Images/monkeys2.jpg';"
+        >
+            <img border = 0 name = "monkeys" src = "Images/monkeys2.jpg">
+        </a>
+        </div>
+        <br />
+        <div
+            onmouseover="this.style.color='red';"
+            onmouseout= "this.style.color='black';">
+
+        Run your mouse over the image to change.
+        <br />
+        Right-click and select View Source for more details.
+
+        </div>
+    </div>
+
+  </body>
+</body>
+<footer>
+    <hr/>
+    <address>
+        <a href="https://www.bellevue.edu/">Bellevue University</a><br>
+        1000 Galvin Road South<br>
+        Bellevue, Nebraska 68005
+    </address>
+</footer>
+
+</html>
